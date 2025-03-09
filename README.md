@@ -50,19 +50,24 @@ INSTALLED_APPS = [
 ]
 ```
 
-### 6. Criar o banco de dados
+### 6. Criar novas migrações com base nas alterações feitas em seus modelos.
+```bash
+python manage.py makemigrations
+```
+
+### 7. Aplicar migrate no banco de dados
 
 ```bash
 python manage.py migrate
 ```
 
-### 7. Criar o superusuário
+### 8. Criar o superusuário
 
 ```bash
 python manage.py createsuperuser
 ```
 
-### 8. Rodar o servidor
+### 9. Rodar o servidor
 
 ```bash
 python manage.py runserver
@@ -105,13 +110,6 @@ pip freeze > requirements.txt
 
 ### Comandos úteis
 
-- **Rodar as migrações:**
-
-  ```bash
-  python manage.py makemigrations
-  python manage.py migrate
-  ```
-
 - **Testar o projeto:**
 
   ```bash
@@ -122,6 +120,12 @@ pip freeze > requirements.txt
 
   ```bash
   python manage.py shell
+  ```
+
+- **sair do ambiente virtual:**
+
+  ```bash
+  deactivate
   ```
 
 ---
