@@ -14,7 +14,7 @@ python manage.py startapp utils
 
 ## 2. Criar os modelos `State` e `City`
 
-No arquivo utils/models.py, adicione:
+No arquivo `utils/models.py`, adicione:
 ```bash
 class State(models.Model):
     name = models.CharField(max_length=100, verbose_name="Nome do Estado")
@@ -52,11 +52,11 @@ python manage.py migrate
 
 ## 4. Adicionar a fixture com dados de estados e cidades
 
-Coloque o arquivo initial_brazil_locations.json em:
+Coloque o arquivo `initial_brazil_locations.json` em:
 ```bash
 utils/fixtures/initial_brazil_locations.json
 ```
-Caso a pasta fixtures não exista, crie-a:
+Caso a pasta `fixtures` não exista, crie-a:
 ```bash
 mkdir -p utils/fixtures
 ```

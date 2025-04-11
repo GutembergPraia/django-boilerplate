@@ -129,3 +129,14 @@ pip freeze > requirements.txt
   ```
 
 ---
+### Fixture 
+- Gera e salva os dados do modelo accounts.Role no arquivo initial_roles.json. Esse arquivo pode ser usado com o comando loaddata para restaurar os papéis iniciais durante a configuração de um novo banco de dados.
+  ```bash
+  python manage.py dumpdata accounts.Role --indent 2 > accounts/fixtures/initial_roles.json
+  ```
+** Carregar Fixture
+  ```bash
+  python manage.py loaddata accounts/fixtures/initial_roles.json
+  ```
+
+---
